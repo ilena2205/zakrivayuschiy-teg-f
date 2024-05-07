@@ -45,10 +45,14 @@
 }
 
 .header__title {
+  line-height: 100%;
+  font-variation-settings: 'wght' 400, 'opsz' 0;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__undertitle {
+  line-height: 100%;
+  font-variation-settings: 'wght' 400, 'opsz' 0;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   justify-self: center;
 }
