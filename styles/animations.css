@@ -15,7 +15,7 @@
 @keyframes strelka {
     0% {inset-inline-start: -14px;}
     100% {inset-inline-start: -19px;}
-  }
+}
 
 @keyframes heart {
     0% {scale: 1;}

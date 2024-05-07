@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="color-scheme" content="light dark" >
     <title>Закрывающий тег</title>
@@ -291,19 +291,19 @@
     <footer class="footer">
       <button class="footer__button"  type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
         <svg viewBox="0 0 40 40" class="footer__svg">
-          <use href="./svg/floppy.svg#floppy" class="footer__floppy">
+          <use href="./svg/floppy.svg#floppy" class="footer__floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog id="dialog-id" class="dialog">
+        <div class="dialog__text">
+          <svg viewBox="0 0 39 39" class="footer__svg">
+            <use href="./svg/floppy.svg#floppy" class="footer__floppy"></use>
+          </svg>
+          <span class="button__text">Вставьте дискету, чтобы продолжить</span>  
+        </div><button type="button" class="dialog__button" onclick="window['dialog-id'].close()">ок</button>
+      </dialog>
     </footer>
-    <dialog id="dialog-id" class="dialog">
-      <div class="dialog__text">
-        <svg viewBox="0 0 39 39" class="footer__svg">
-          <use href="./svg/floppy.svg#floppy" class="footer__floppy">
-        </svg>
-        <span class="button__text">Вставьте дискету, чтобы продолжить</span>  
-      </div><button type="button" class="dialog__button" onclick="window['dialog-id'].close()">ок</button>
-    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

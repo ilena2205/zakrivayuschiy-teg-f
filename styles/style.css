@@ -50,7 +50,7 @@
 
 .header__undertitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  justify-self: center;  
+  justify-self: center;
 }
 
 .header__theme-menu {
@@ -75,7 +75,6 @@
   cursor: pointer;
   color: var(--accent-color);
   appearance: none;
-  position: relative;
 }
 
 .theme-menu__button:disabled::before {
@@ -305,7 +304,7 @@
 .footer__button {
   display: flex;
   gap: 8px;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   padding: 15px 18px;
   inline-size: clamp(306px, 25vw, 335px);
@@ -433,7 +432,7 @@
 .dialog[open] {
   display: flex;
   gap: 30px;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -462,7 +461,7 @@
   object-position: center;
 }
 
-.dialog__button{
+.dialog__button {
   font-size: 14px;
   font-family: var(--accent-font);
   font-weight: 400;
@@ -471,7 +470,6 @@
   color: var(--accent-color);
   block-size: 38px;
   inline-size: clamp(257px, 25vw, 293px);
-  border: none;
   background-color: transparent;
   border: 2px solid var(--accent-color);
   cursor: pointer;
