@@ -159,3 +159,15 @@
           </li>
         </ul>
       </section>
+
+
+
+<dialog id="dialog-id" class="dialog">
+        <div class="dialog__text">
+          <svg viewBox="0 0 39 39" class="footer__svg">
+            <use href="./svg/floppy.svg#floppy" class="footer__floppy"></use>
+          </svg>
+          <span class="button__text">Вставьте дискету, чтобы продолжить</span>  
+        </div>
+        <button type="button" class="dialog__button" onclick="window['dialog-id'].close()">ок</button>
+      </dialog>
