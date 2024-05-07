@@ -4,3 +4,49 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --main-font: 'Inter', Arial, sans-serif;
+    --accent-font: 'PressStart2P', Monospace;
+    --title-weight: 700;
+    --text-weight: 400;
+    --bg-color: rgba(255, 255, 255, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --grad-color: #d3d3d3;
+    --grad-light-color: #e7e7e7;
+    --grad-dark-color: #1a1a1a;
+    --button-text-color: rgba(255, 255, 255, 1);
+    --heart-color: #FF0000;
+    --contur-color: rgba(0, 0, 0, 1);
+}
+
+:root.theme-dark {
+    --main-font: 'Inter', Arial, sans-serif;
+    --accent-font: 'PressStart2P', Monospace;
+    --title-weight: 785;
+    --text-weight: 465;
+    --bg-color: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 204, 20, 1);
+    --grad-color: #000;
+    --grad-light-color: #007f0c;
+    --grad-dark-color: #004306;
+    --button-text-color: rgba(0, 204, 20, 1);
+    --heart-color: #FF0000;
+    --contur-color: rgba(0, 204, 20, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-font: 'Inter', Arial, sans-serif;
+        --accent-font: 'PressStart2P', Monospace;
+        --title-weight: 785;
+        --text-weight: 465;
+        --bg-color: rgba(0, 0, 0, 1);
+        --accent-color: rgba(0, 204, 20, 1);
+        --grad-color: #000;
+        --grad-light-color: #007f0c;
+        --grad-dark-color: #004306;
+        --button-text-color:  rgba(0, 204, 20, 1);
+        --heart-color: #FF0000;
+        --contur-color: rgba(0, 204, 20, 1);
+    }
+}
