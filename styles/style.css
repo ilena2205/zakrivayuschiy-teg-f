@@ -62,7 +62,8 @@
 @media (width < 375px) {
   .header__logo {
     font-size: 2.9rem;
-  }}
+  }
+}
 
 .header__undertitle {
   line-height: 100%;
@@ -193,7 +194,7 @@
 }
 
 .filter-rotate {
-  filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg) invert(0.3);
 }
 
 .filter-invert {
@@ -363,7 +364,8 @@
 @media (width > 650px) {
   .content__svg {
     width: 21px;
-  }}
+  }
+}
 
 .sparks {
   opacity: 0;
