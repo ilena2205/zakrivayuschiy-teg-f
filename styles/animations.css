@@ -27,7 +27,6 @@
     }
     100% {
         scale: 1.5;
-        transform-origin: center;
     }
 }
 
