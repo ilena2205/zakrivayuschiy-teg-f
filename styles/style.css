@@ -52,7 +52,6 @@
 .header__logo {
   box-sizing: border-box;
   margin: 0;
-  overflow: hidden;
   line-height: 100%;
   text-transform: uppercase;
   font-weight: 400;
@@ -139,6 +138,7 @@
   inset-inline-start: 3px;
   inset-block-start: 15px;
   transform: scaleX(0);
+  transition: transform 0.3s ease; 
 }
 
 .theme-menu__button:focus-visible::after {
@@ -217,7 +217,7 @@
   z-index: 1;
   position: absolute;
   inset-block-start: 25px;
-  inset-inline-end: 14px;
+  inset-inline-end: 13px;
   font-size: 14px;
   opacity: 0.5;
   font-family: var(--accent-font);
@@ -233,6 +233,13 @@
       text-shadow: none;
   }
 } 
+
+@media (width > 375px) {
+  .lebl__text {
+    inset-block-start: 27px;
+    inset-inline-end: 27px;
+  }
+}
 
 .content__paragraph {
   display: grid;
@@ -269,7 +276,7 @@
 .like-icon {
   box-sizing: border-box;
   position: absolute;
-  inset-inline-start: 0px;
+  inset-inline-start: -1.5px;
   inset-block-start: 0px;
 }
 
@@ -387,12 +394,12 @@
 }
 
 .card__icon-button:hover .core {
-  fill: var(--heart-main-color);
+  fill: var(--contur-color);
   transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .main-body {
-  fill: var(--heart-main-color);
+  fill: var(--contur-color);
   transition: fill 0.3s 0.05s linear;
 }
 
@@ -445,7 +452,6 @@
 .dialog[open] {
   display: flex;
   gap: 30px;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -483,12 +489,17 @@
   line-height: 12.6px;
   text-transform: uppercase;
   block-size: 38px;
-  inline-size: clamp(256px, 25vw, 292px);
+  inline-size: clamp(257px, 25vw, 295px);
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   cursor: pointer;
   appearance: none;
 }
 
+@media (width < 375px) {
+  .dialog__button {
+    inline-size: clamp(220px, 25vw, 257px);
+  }
+}
 
 
