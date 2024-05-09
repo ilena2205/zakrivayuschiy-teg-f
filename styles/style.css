@@ -138,7 +138,7 @@
   inset-inline-start: 3px;
   inset-block-start: 15px;
   transform: scaleX(0);
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
