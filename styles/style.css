@@ -443,7 +443,7 @@
 } 
 
 .dialog {
-  inline-size: clamp(341px, 25vw, 353px);
+  inline-size: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
   padding: 30px;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
@@ -464,7 +464,7 @@
 }
 
 .dialog__text {
-  inline-size: clamp(257px, 25vw, 295px);
+  inline-size: clamp(16.063rem, 3.568vw + 15.226rem, 18.438rem);
   display: grid;
   gap: 13px;
   justify-content: center;
@@ -489,7 +489,7 @@
   line-height: 12.6px;
   text-transform: uppercase;
   block-size: 38px;
-  inline-size: clamp(257px, 25vw, 295px);
+  inline-size: clamp(16.063rem, 3.568vw + 15.226rem, 18rem);
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   cursor: pointer;
@@ -498,7 +498,7 @@
 
 @media (width < 375px) {
   .dialog__button {
-    inline-size: clamp(220px, 25vw, 257px);
+    inline-size: clamp(220px, 25vw, 16.063rem);
   }
 }
 
